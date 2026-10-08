@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1b2b4b;
+  --color-accent: #1f4f99;  /* links och knappar */
+  --color-highlight: #f3c64b;   /* För markering */
+  --color-surface: #eef2f8;
+  --color-border: #d5dce8;
+  --color-muted: #5b6b88;
+  --font-heading: "Literata", Georgia, serif;
+  --font-body: "Atkinson Hyperlegible", system-ui, Arial, sans-serif;
+}
+
+body{
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
 
