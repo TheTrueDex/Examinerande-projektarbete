@@ -7,7 +7,7 @@
   --color-highlight: #f3c64b;   /* För markering */
   --color-surface: #eef2f8;
   --color-border: #d5dce8;
-  --color-muted: #5b6b88;
+  --color-muted: #5b6b88;   /* Undertext */
   --font-heading: "Literata", Georgia, serif;
   --font-body: "Atkinson Hyperlegible", system-ui, Arial, sans-serif;
 }
@@ -22,4 +22,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
 }
+
+/* ----------------------------------------------------------- */
+                  /* header and footer css*/
+
+
 
