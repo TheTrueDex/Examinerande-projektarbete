@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.content{
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+}
+
+a:focus-visible{
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.utility{
+    background-color: var(--color-dark);
+    color: var(--color-bg-text);
+    font-size: 13px;
+}
+
+.utility .content{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-block: 6px;
+}
+
+.utility a{
+    color: var(--color-bg-text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.utility a:hover{
+    text-decoration-thickness: 2px;
+}
+
+.utility a:focus-visible{
+    outline: 2px solid var(--color-highlight);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+

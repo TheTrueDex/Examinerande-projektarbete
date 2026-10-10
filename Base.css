@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
 
 :root {
-  --color-bg: #ffffff;
-  --color-text: #1b2b4b;
+  --color-bg-text: #ffffff;
+  --color-dark: #1b2b4b;
   --color-accent: #1f4f99;  /* links och knappar */
   --color-highlight: #f3c64b;   /* För markering */
   --color-surface: #eef2f8;
@@ -15,8 +15,8 @@
 
 body{
     font-family: var(--font-body);
-    color: var(--color-text);
-    background-color: var(--color-bg);
+    color: var(--color-dark);
+    background-color: var(--color-bg-text);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +26,5 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ----------------------------------------------------------- */
                   /* header and footer css*/
-
 
 
