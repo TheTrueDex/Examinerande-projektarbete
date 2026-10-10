@@ -1,6 +1,7 @@
 Kommer lägga all kod som ska delas med varandra så vi inte får problem i längden.
 
 Utility och header HTML:
+
     <div class="utility">
         <div class="content">
             <a href="#">Lättläst</a>
@@ -27,6 +28,7 @@ Utility och header HTML:
     </header>
     -----------------------------------------------------------------------------
     Footer HTML:
+
         <footer class="footer">
         <div class="content">
             <address>
@@ -41,4 +43,5 @@ Utility och header HTML:
             </ul>
         </div>
     </footer>
+    -----------------------------------------------------------------------------
     
