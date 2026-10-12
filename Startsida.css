@@ -5,3 +5,61 @@
 body{
     margin: 0;
 }
+
+main a{
+    color: var(--color-accent);
+}
+
+.button{
+    padding: 14px 28px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-accent);
+    color: var(--color-bg-text);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--color-accent);
+}
+
+.button-dark{
+    padding: 14px 28px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-dark);
+    color: var(--color-bg-text);
+}
+
+.button-dark:hover{
+    background-color: var(--color-accent);
+}
+
+.button:focus-visible, input:focus-visible{
+    outline: 3px solid var(--color-highlight);
+    outline-offset: 3px;
+}
+
+.cta {
+    background-color: var(--color-highlight);
+    padding-block: 48px;
+}
+
+.cta .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.cta h2{
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+.cta p{
+    margin: 0;
+}
