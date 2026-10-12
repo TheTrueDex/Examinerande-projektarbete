@@ -36,8 +36,83 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
 
+        <section class="hero" aria-label="Hero-title">
+            <div class="content">
+                <div class="hero-intro">
+                    <h1>Välkommen till Norrbacka bibliotek</h1>
+                    <form class="search" role="search" action="/sök">
+                        <label for="search-input">Sök böker, filmer och ljudböker</label>
+                        <div class="search-row">
+                            <input id="search-input" type="search" name="q" placeholder="title, författre eller ämne">
+                            <button class="button" type="submit">Sök</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <aside class="hours" aria-label="hours-title">
+                    <h2 id="hours-title">Öppettider</h2>
+                    <p class="hours-time">10:00 - 19:00</p>
+                    <p class="hours-status"><span aria-hidden="true">✓</span> Öppet nu</p>
+                    <a href="#">Alla öppettider</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="events" aria-label="events-title">
+            <div class="content">
+                <div class="event-header">
+                    <h2 id="events-title">På gång</h2>
+                    <a href="#">Alla evenemang</a>
+                </div>
+
+                <ul class="event-list">
+                    <li class="event-card">
+                        <div class="event-img-blue">
+                            <img src="" alt="[Bild: författare läser]">
+                        </div>
+                        <div class="event-body">
+                            <p class="event-data"><time datetime="2026-10-14T18:00">Ons 14 okt · 18:00</time></p>
+                            <h3><a href="#">Författarsamtal med Sara Holm</a></h3>
+                            <p>Om hennes nya roman och skrivandets vardag.</p>
+                        </div>
+                    </li>
+
+                    <li class="event-card">
+                        <div class="event-img-yellow">
+                            <img src="" alt="[Bild: barn på sagostund]">
+                        </div>
+                        <div class="event-body">
+                            <p class="event-data"><time datetime="2026-10-17T10:30">Lör 17 okt · 10:30</time></p>
+                            <h3><a href="#">Sagostund 3-6 år</a></h3>
+                            <p>Vi läser och sjunger tillsammans i barnavdelningen.</p>
+                        </div>
+                    </li>
+
+                    <li class="event-card">
+                        <div class="event-img-green">
+                            <img src="" alt="[Bild: händer på tangentbord]">
+                        </div>
+                        <div class="event-body">
+                            <p class="event-data"><time datetime="2026-10-20T14:00">Tis 20 okt · 14:00</time></p>
+                            <h3><a href="#">Digital drop-in</a></h3>
+                            <p>Få hjälp med BankID, e-tjänster och mobilen.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta" aria-label="cta-title">
+            <div class="content">
+                <div>
+                    <h2 id="cta-title">Inget lånekort än?</h2>
+                    <p>Det är gratis och tar fem minuter. Med lånekortet kan du även låna e-böcker.</p>
+                </div>
+                <a class="button-dark" herf="#">Bli låntagare</a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
