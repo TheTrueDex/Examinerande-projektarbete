@@ -16,6 +16,8 @@
 
 body{
     font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.5;
     color: var(--color-dark);
     background-color: var(--color-bg-text);
 }
@@ -32,11 +34,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     margin-inline: auto;
-    padding-inline: 24px;
+    padding-inline: 16px;
 }
 
 a:focus-visible{
-    outline: 2px solid var(--color-highlight);
+    outline: 3px solid var(--color-highlight);
     outline-offset: 3px;
     border-radius: 2px;
 }
@@ -44,18 +46,18 @@ a:focus-visible{
 .utility{
     background-color: var(--color-dark);
     color: var(--color-bg-text);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .utility .content{
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding-block: 6px;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding-block: 8px;
 }
 
 .utility a{
-    color: var(--color-bg-text);
+    color: inherit;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -65,12 +67,13 @@ a:focus-visible{
 }
 
 .utility a:focus-visible{
-    outline: 2px solid var(--color-highlight);
+    outline: 3px solid var(--color-highlight);
     outline-offset: 3px;
     border-radius: 2px;
 }
 
 .header{
+    position: relative;
     background-color: var(--color-bg-text);
     border-bottom: 1px solid var(--color-border);
 }
@@ -79,8 +82,8 @@ a:focus-visible{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    min-height: 72px;
+    gap: 16px;
+    min-height: 12px;
 }
 
 .logo{
@@ -95,29 +98,57 @@ a:focus-visible{
 }
 
 .logo img{
-    width: 28px;
-    height: auto;
+    width: auto;
+    height: 32px;
     display: block;
 }
 
-.nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px;
-    margin: 0;
-    padding: 0;
+.nav summary{
+    padding: 8px 14px;
+    border: 2px solid var(--color-bg-text);
+    border-radius: 4px;
+    font-weight: 700;
     list-style: none;
+    cursor: pointer;
+}
+
+.nav summary::before{
+    content: "☰ ";
+}
+
+.nav details[open] summary::before{
+    content: "✕ ";
+}
+
+.nav summary:hover{
+    background-color: var(--color-accent);
+}
+
+.nav summary:focus-visible{
+    outline: 3px solid var(--color-highlight);
+    outline-offset: 3px;
+}
+
+.nav ul{
+    position: relative;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0;
+    padding: 0 16px 16px;
+    list-style: none;
+    background-color: var(--color-bg-text);
+    border-bottom: var(--color-border);
 }
 
 .nav a{
     display: block;
-    padding: 10px 14px;
+    padding: 16px;
     border-radius: 4px;
     color: var(--color-dark);
     text-decoration: none;
     font-weight: 700;
-    font-size: 15px;
 }
 
 .nav a:hover{
@@ -131,16 +162,16 @@ a:focus-visible{
 .footer{
     background-color: var(--color-dark);
     color: var(--color-bg-text);
-    font-size: 15px;
+    font-size: 17px;
     padding-block: 40px;
     line-height: 1.6;
 }
 
 .footer .content{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 24px;
 }
 
 .footer address{
@@ -150,7 +181,7 @@ a:focus-visible{
 .footer-name{
     margin: 0 0 8px;
     font-family: var(--font-heading);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -164,14 +195,13 @@ a:focus-visible{
     text-decoration-thickness: 2px;
 }
 
-.footer-link{
+.footer-links{
     display: flex;
     flex-direction: column;
     gap: 8px;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: right;
 }
 
 /* ----------------------------------------------------------- */

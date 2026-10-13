@@ -10,7 +10,7 @@ main a{
     color: var(--color-accent);
 }
 
-.button{
+.button, .button-dark{
     display: inline-block;
     padding: 14px 28px;
     border: 0;
@@ -19,6 +19,7 @@ main a{
     color: var(--color-bg-text);
     font: inherit;
     font-weight: 700;
+    text-align: center;
     text-decoration: none;
     cursor: pointer;
 }
@@ -28,9 +29,6 @@ main a{
 }
 
 .button-dark{
-    padding: 14px 28px;
-    border: 0;
-    border-radius: 4px;
     background-color: var(--color-dark);
     color: var(--color-bg-text);
 }
@@ -46,19 +44,19 @@ main a{
 
 .hero{
     background-color: var(--color-surface);
-    padding-block: 58px;
+    padding-block: 40px;
 }
 
 .hero .content{
     display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 48px;
+    grid-template-columns: 1fr;
+    gap: 32px;
     align-items: start;
 }
 
 .hero h1{
     margin: 0 0 24px;
-    font-size: 52px;
+    font-size: 40px;
     line-height: 1.15;
 }
 
@@ -70,11 +68,11 @@ main a{
 
 .search-row{
     display: flex;
+    flex-direction: column;
     gap: 12px;
 }
 
 .search input{
-    flex: 1;
     min-width: 0;
     padding: 14px 16px;
     border: 2px solid var(--color-text);
@@ -118,21 +116,24 @@ main a{
     font-weight: 700;
 }
 
+---------------------------------------
+
 .events{
-    padding-block: 64px;
+    padding-block: 48px;
 }
 
 .section-header{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    gap: 16px;
+    gap: 8px 16px;
     margin-bottom: 24px;
 }
 
 .section-header h2{
     margin: 0;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .section-header a{
@@ -141,7 +142,7 @@ main a{
 
 .event-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 24px;
     margin: 0;
     padding: 0;
@@ -164,6 +165,7 @@ main a{
 
 .event-card:focus-within{
     outline: 3px solid var(--color-highlight);
+    outline-offset: 3px;
 }
 
 .event-img-blue, .event-img-yellow, .event-img-green{
@@ -186,7 +188,15 @@ main a{
     background-color: var(--color-success);
 }
 
+.event-card img{
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
 .event-body{
+    font-family: var(--font-body);
     padding: 20px 24px 24px;
 }
 
@@ -194,21 +204,20 @@ main a{
     margin: 0;
 }
 
-.event-data{
-  margin: 0;
+.event-data .event-body{
   color: var(--color-accent);
   font-size: 15px;
   font-weight: 700;
 }
 
-.event-body h3{
+.event-body h3 .event-card{
   margin: 8px 0;
   font-family: var(--font-heading);
   font-size: 22px;
   line-height: 1.25;
 }
 
-.event-body h3 a{
+.event-body h3 a .event-card{
     color: var(--color-dark);
 }
 
@@ -229,14 +238,14 @@ main a{
 
 .cta .content{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
+    justify-content: column;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .cta h2{
     margin: 0 0 8px;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .cta p{
