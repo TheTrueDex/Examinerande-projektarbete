@@ -9,20 +9,25 @@ Utility och header HTML:
             <a href="#" lang="en">In English</a>
         </div>
     </div>
+
     <header class="header">
         <div class="content">
             <a class="logo" href="/">
-                <img src="logo.png" alt="Logo">
+                <img src="" alt="Logo">
                 Norrbacka bibliotek
             </a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#" aria-current="page">Start</a></li>
-                    <li><a href="#">Evenemang</a></li>
-                    <li><a href="#">Barn & unga</a></li>
-                    <li><a href="#">Besök oss</a></li>
-                    <li><a href="#">Bli låntagare</a></li>
-                </ul>
+
+            <nav class="nav" aria-label="Huvudmeny">
+                <details>
+                    <summary>Meny</summary>
+                        <ul>
+                            <li><a href="#" aria-current="page">Start</a></li>
+                            <li><a href="#">Evenemang</a></li>
+                            <li><a href="#">Barn & unga</a></li>
+                            <li><a href="#">Besök oss</a></li>
+                            <li><a href="#">Bli låntagare</a></li>
+                        </ul>
+                </details>
             </nav>
         </div>
     </header>

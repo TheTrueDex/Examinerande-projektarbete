@@ -29,6 +29,7 @@ main a{
 }
 
 .button-dark{
+
     background-color: var(--color-dark);
     color: var(--color-bg-text);
 }
@@ -115,8 +116,6 @@ main a{
     color: var(--color-success);
     font-weight: 700;
 }
-
----------------------------------------
 
 .events{
     padding-block: 48px;
