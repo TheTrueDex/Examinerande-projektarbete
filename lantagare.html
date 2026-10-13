@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <main>
+    <h1>Bli låntagare</h1>
+
+
+        <p>Fyll i formuläret och hämta ditt lånekort i informationsdisken. Ta med legitimation. Barn under 15 år behöver en vårdnadshavare med sig.</p>
+
+        <nav arial-label="Registreringens steg">
+
+          <ol>
+            <li>1.Dina uppgifter</li>
+            <li>2.Kontrollera</li>
+            <li>3.Klar</li>
+          </ol>
+        </nav>
+
+        <form action="/registrera" metod="post">
+
+             <form action="/registrera" method="post">
+
+      <fieldset>
+        <legend>Personuppgifter</legend>
+
+        <label for="fornamn">Förnamn (obligatoriskt)</label>
+        <input id="fornamn" name="fornamn"
+               autocomplete="given-name" required>
+
+        <label for="efternamn">Efternamn (obligatoriskt)</label>
+        <input id="efternamn" name="efternamn"
+               autocomplete="family-name" required>
+
+        <label for="fodelsedatum">
+          Födelsedatum (obligatoriskt)
+        </label>
+        <input id="fodelsedatum" name="fodelsedatum"
+               type="date" required>
+
+        <label for="adress">Gatuadress (obligatoriskt)</label>
+        <input id="adress" name="adress"
+               autocomplete="street-address" required>
+
+        <label for="postnummer">Postnummer</label>
+        <input id="postnummer" name="postnummer"
+               autocomplete="postal-code">
+
+        <label for="ort">Ort</label>
+        <input id="ort" name="ort"
+               autocomplete="address-level2">
+      </fieldset>
+
+
+
+
+</main>
+
+
+    
+</body>
+</html>
