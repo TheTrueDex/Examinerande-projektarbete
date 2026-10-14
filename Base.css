@@ -109,6 +109,8 @@ a:focus-visible{
     padding: 8px 14px;
     border: 2px solid var(--color-bg-text);
     border-radius: 4px;
+    background-color: var(--color-dark);
+    color: var(--color-bg-text);
     font-weight: 700;
     list-style: none;
     cursor: pointer;
@@ -153,7 +155,7 @@ a:focus-visible{
     font-weight: 700;
 }
 
-.nav a[current="page"]{
+.nav a[aria-current="page"]{
     background-color: var(--color-highlight);
 }
 
@@ -203,3 +205,76 @@ a:focus-visible{
 }
 
 /* ----------------------------------------------------------- */
+
+@media (min-width: 640px){
+    .content{
+        padding-inline: 24px;
+    }
+
+    .utility{
+        display: block;
+    }
+
+    .utility .content{
+        justify-content: flex-end;
+        gap: 24px;
+    }
+
+    .footer{
+        padding-block: 48px;
+        font-size: 17px;
+    }
+
+    .footer .content{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    .footer-name{
+        font-size: 24px;
+    }
+
+    .footer-links{
+        display: flex;
+        text-align: right;
+    }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 832px){
+    .header .content{
+        gap: 32px;
+        min-height: 80px;
+        padding-block: 0;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+
+    .logo img{
+        height: 36px;
+    }
+
+    .nav summary{
+        display: none;
+    } 
+
+    .nav details::details-content{
+        content-visibility: visible;
+        display: block;
+    }
+
+    .nav ul{
+        position: static;
+        display: flex;
+        gap: 4px;
+        padding: 0;
+        border: 0;
+    }
+
+    .nav a{
+        padding: 10px 16px;
+    }
+}
