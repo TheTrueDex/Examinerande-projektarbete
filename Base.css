@@ -44,6 +44,7 @@ a:focus-visible{
 }
 
 .utility{
+    display: none;
     background-color: var(--color-dark);
     color: var(--color-bg-text);
     font-size: 15px;
@@ -91,15 +92,16 @@ a:focus-visible{
     align-items: center;
     gap: 12px;
     font-family: var(--font-heading);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
+    line-height: 1.2;
     color: var(--color-dark);
     text-decoration: none;
 }
 
 .logo img{
     width: auto;
-    height: 32px;
+    height: 28px;
     display: block;
 }
 
@@ -151,10 +153,6 @@ a:focus-visible{
     font-weight: 700;
 }
 
-.nav a:hover{
-    background-color: var(--color-surface);
-}
-
 .nav a[current="page"]{
     background-color: var(--color-highlight);
 }
@@ -162,8 +160,8 @@ a:focus-visible{
 .footer{
     background-color: var(--color-dark);
     color: var(--color-bg-text);
-    font-size: 17px;
-    padding-block: 40px;
+    font-size: 16px;
+    padding-block: 32px;
     line-height: 1.6;
 }
 
@@ -196,7 +194,7 @@ a:focus-visible{
 }
 
 .footer-links{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 8px;
     margin: 0;
