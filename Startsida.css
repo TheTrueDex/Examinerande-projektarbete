@@ -133,15 +133,12 @@ main a{
     font-weight: 700;
 }
 
-<<<<<<< HEAD
-=======
 .hours a{
     grid-column: 2;
     grid-row: 1 / span 2;
     font-size: 15px;
 }
 
->>>>>>> origin/Nassr
 .events{
     padding-block: 32px;
 }

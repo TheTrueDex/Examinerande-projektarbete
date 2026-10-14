@@ -17,11 +17,7 @@ Utility och header HTML:
                 Norrbacka bibliotek
             </a>
 
-<<<<<<< HEAD
-            <nav class="nav" aria-label="Huvudmeny">
-=======
             <nav class="nav" aria-label="meny-title">
->>>>>>> origin/Nassr
                 <details>
                     <summary>Meny</summary>
                         <ul>
