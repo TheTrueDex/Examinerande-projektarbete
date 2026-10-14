@@ -24,7 +24,7 @@
                 Norrbacka bibliotek
             </a>
 
-            <nav class="nav" aria-label="Huvudmeny">
+            <nav class="nav" aria-label="meny-title">
                 <details>
                     <summary>Meny</summary>
                         <ul>
@@ -44,7 +44,7 @@
         <section class="hero" aria-label="Hero-title">
             <div class="content">
                 <div class="hero-intro">
-                    <h1>Välkommen till Norrbacka bibliotek</h1>
+                    <h1 id="hero-title">Välkommen till Norrbacka bibliotek</h1>
                     <form class="search" role="search" action="/sök">
                         <label for="search-input">Sök böker, filmer och ljudböker</label>
                         <div class="search-row">
@@ -58,7 +58,7 @@
                     <h2 id="hours-title">Öppettider</h2>
                     <p class="hours-time">10:00 - 19:00</p>
                     <p class="hours-status"><span aria-hidden="true">✓</span> Öppet nu</p>
-                    <a href="#">Alla öppettider</a>
+                    <a href="#">Alla <span class="desktop-only">öppet</span>tider</a>
                 </aside>
             </div>
         </section>
@@ -67,7 +67,6 @@
             <div class="content">
                 <div class="section-header">
                     <h2>På gång</h2>
-                    <a href="#">Alla evenemang</a>
                 </div>
 
                 <ul class="event-list">
@@ -98,6 +97,7 @@
                         </div>
                     </li>
                 </ul>
+                <a class="events-more" href="#">Alla evenemang</a>
             </div>
         </section>
 
@@ -105,7 +105,10 @@
             <div class="content">
                 <div>
                     <h2 id="cta-title">Inget lånekort än?</h2>
-                    <p>Det är gratis och tar fem minuter. Med lånekortet kan du även låna e-böcker.</p>
+                    <p>
+                        <span class="mobile-only">Gratis och tar fem minuter.</span> 
+                        <span class="desktop-only">Med lånekortet kan du även låna e-böcker.</span>
+                    </p>
                 </div>
                 <a class="button-dark" herf="#">Bli låntagare</a>
             </div>
