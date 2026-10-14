@@ -109,6 +109,8 @@ a:focus-visible{
     padding: 8px 14px;
     border: 2px solid var(--color-bg-text);
     border-radius: 4px;
+    background-color: var(--color-dark);
+    color: var(--color-bg-text);
     font-weight: 700;
     list-style: none;
     cursor: pointer;
@@ -153,7 +155,7 @@ a:focus-visible{
     font-weight: 700;
 }
 
-.nav a[current="page"]{
+.nav a[aria-current="page"]{
     background-color: var(--color-highlight);
 }
 
