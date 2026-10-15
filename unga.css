@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+.unga-hero {
+    background-color: var(--color-surface);
+    padding-block: 58px;
+}
+
+.unga-hero .content-ung-hero-content{
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 48px;
+    align-items: start;
+}
