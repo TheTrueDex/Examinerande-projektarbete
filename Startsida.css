@@ -38,6 +38,7 @@ main a{
 }
 
 .button-dark{
+
     background-color: var(--color-dark);
     color: var(--color-bg-text);
 }
