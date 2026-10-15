@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="testaattradera.css">
+    <link rel="stylesheet" href="Base.css">
 </head>
+
 <body>
+    <div class="utility">
+        <div class="content">
+            <a href="#">Lättläst</a>
+            <a href="#">Teckenspråk</a>
+            <a href="#" lang="en">In English</a>
+        </div>
+    </div>
+
+<header class="header">
+    <div class="content">
+        <a class="logo" href="/">
+            <img src="logo.png" alt="Logo">
+            Norrbacka bibliotek
+        </a>
+        <nav class="nav" aria-label="meny-title">
+            <details>
+                <summary>Meny</summary>
+                    <ul>
+                        <li><a href="#" aria-current="page">Start</a></li>
+                        <li><a href="#">Evenemang</a></li>
+                        <li><a href="#">Barn & unga</a></li>
+                        <li><a href="#">Besök oss</a></li>
+                        <li><a href="#">Bli låntagare</a></li>
+                    </ul>
+            </details>        
+        </nav>
+    </div>
+</header>
+
+
+
+
+
 
   <main>
-    <h1>Bli låntagare</h1>
+    <section class="hero" aria-label="Hero-title">
+        <div class="content">
+            <div class="hero-intro">
+                <h1>Bli låntagare</h1>
+                <p>Fyll i formuläret och hämta ditt lånekort i informationsdisken. Ta med legitimation. Barn under 15 år behöver en vårdnadshavare med sig.</p>
+            </div>
+        <nav class="steps" arial-label="Registreringens steg">
 
-
-        <p>Fyll i formuläret och hämta ditt lånekort i informationsdisken. Ta med legitimation. Barn under 15 år behöver en vårdnadshavare med sig.</p>
-
-        <nav arial-label="Registreringens steg">
-
-          <ol>
-            <li>1.Dina uppgifter</li>
-            <li>2.Kontrollera</li>
-            <li>3.Klar</li>
-          </ol>
+            <ol>
+                <li>1.Dina uppgifter</li>
+                <li>2.Kontrollera</li>
+                <li>3.Klar</li>
+            </ol>
         </nav>
 
-        <form action="/registrera" metod="post">
 
-             <form action="/registrera" method="post">
+    </section>
 
-      <fieldset>
-        <legend>Personuppgifter</legend>
+
+
+      <fieldset class="form-section">
+        <legend class="form-section_title">Personuppgfiter</legend>
+        
 
         <label for="fornamn">Förnamn (obligatoriskt)</label>
         <input id="fornamn" name="fornamn"
@@ -56,12 +95,82 @@
                autocomplete="address-level2">
       </fieldset>
 
+      <fieldset class="form-section">
+        <legend class="form-section_title">Kontakt och påminelser</legend>
+        
+
+        <label for="epost">E-post (obligatoriskt)</label>
+        <input id="epost" name="epost" type="email"
+               autocomplete="email" required>
+
+        <label for="mobil">Mobilnummer</label>
+        <input id="mobil" name="mobil" type="tel"
+               autocomplete="tel">
+
+        <p>Jag vill få påminnelser via</p>
+
+        <input id="paminelse-epost" type="checkbox"
+               name="paminelse" value="epost" checked>
+        <label for="paminelse-epost">E-post</label>
+
+        <input id="paminelse-sms" type="checkbox"
+               name="paminelse" value="sms">
+        <label for="paminelse-sms">SMS</label>
+
+        <label for="sprak">Språk för utskick</label>
+        <select id="sprak" name="sprak">
+            <option value="sv">Svenska</option>
+            <option value="en">Engelska</option>
+        </select>
+      </fieldset>
 
 
+      <fieldset class="form-section">
+        <legend class="form-section_title">PIN-kod</legend>
 
+        <label for="pinkod">Välj en Pin-kod (Obligatoriskt)</label>
+        <input id="pinkod" name="pinkod" type="password"
+               inputmode="numeric" pattern="[0-9]{4}"
+               minlength="4" maxlength="4" required>
+
+        <p>4 siffror. Används för meröppet och e-böcker</p>
+
+
+      </fieldset>
+
+      <div>
+        <input id="godkannande" name="godkannande"
+               type="checkbox" required>
+        <label for="godkannande">
+          Jag har läst lånevillkoren och godkänner att biblioteket behandlar mina personuppgifter.
+    
+        </label>
+      </div>
+
+      <button> type="submit">Fortsätt till steg 2</button>
+    </form>
 </main>
 
 
-    
+
+    <footer class="footer">
+    <div class="content">
+        <address>
+            <p class="footer-name">Norrbacka bibliotek</p>
+            Biblioteksgatan 1, 123 45 Hamnstad<br>
+            <a href="tel:+46100000000">010-222 33 44</a>
+        </address>
+        <ul class="footer-links">
+            <li><a href="#">Tillgänglighetsredogörelse</a></li>
+            <li><a href="#">Personuppgifter</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
 </body>
 </html>
