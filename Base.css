@@ -16,6 +16,8 @@
 
 body{
     font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.5;
     color: var(--color-dark);
     background-color: var(--color-bg-text);
 }
@@ -32,30 +34,31 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     margin-inline: auto;
-    padding-inline: 24px;
+    padding-inline: 16px;
 }
 
 a:focus-visible{
-    outline: 2px solid var(--color-highlight);
+    outline: 3px solid var(--color-highlight);
     outline-offset: 3px;
     border-radius: 2px;
 }
 
 .utility{
+    display: none;
     background-color: var(--color-dark);
     color: var(--color-bg-text);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .utility .content{
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding-block: 6px;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding-block: 8px;
 }
 
 .utility a{
-    color: var(--color-bg-text);
+    color: inherit;
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -65,12 +68,13 @@ a:focus-visible{
 }
 
 .utility a:focus-visible{
-    outline: 2px solid var(--color-highlight);
+    outline: 3px solid var(--color-highlight);
     outline-offset: 3px;
     border-radius: 2px;
 }
 
 .header{
+    position: relative;
     background-color: var(--color-bg-text);
     border-bottom: 1px solid var(--color-border);
 }
@@ -79,8 +83,8 @@ a:focus-visible{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    min-height: 72px;
+    gap: 16px;
+    min-height: 12px;
 }
 
 .logo{
@@ -88,59 +92,86 @@ a:focus-visible{
     align-items: center;
     gap: 12px;
     font-family: var(--font-heading);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
+    line-height: 1.2;
     color: var(--color-dark);
     text-decoration: none;
 }
 
 .logo img{
-    width: 28px;
-    height: auto;
+    width: auto;
+    height: 28px;
     display: block;
 }
 
-.nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px;
-    margin: 0;
-    padding: 0;
+.nav summary{
+    padding: 8px 14px;
+    border: 2px solid var(--color-bg-text);
+    border-radius: 4px;
+    background-color: var(--color-dark);
+    color: var(--color-bg-text);
+    font-weight: 700;
     list-style: none;
+    cursor: pointer;
+}
+
+.nav summary::before{
+    content: "☰ ";
+}
+
+.nav details[open] summary::before{
+    content: "✕ ";
+}
+
+.nav summary:hover{
+    background-color: var(--color-accent);
+}
+
+.nav summary:focus-visible{
+    outline: 3px solid var(--color-highlight);
+    outline-offset: 3px;
+}
+
+.nav ul{
+    position: relative;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin: 0;
+    padding: 0 16px 16px;
+    list-style: none;
+    background-color: var(--color-bg-text);
+    border-bottom: var(--color-border);
 }
 
 .nav a{
     display: block;
-    padding: 10px 14px;
+    padding: 16px;
     border-radius: 4px;
     color: var(--color-dark);
     text-decoration: none;
     font-weight: 700;
-    font-size: 15px;
 }
 
-.nav a:hover{
-    background-color: var(--color-surface);
-}
-
-.nav a[current="page"]{
+.nav a[aria-current="page"]{
     background-color: var(--color-highlight);
 }
 
 .footer{
     background-color: var(--color-dark);
     color: var(--color-bg-text);
-    font-size: 15px;
-    padding-block: 40px;
+    font-size: 16px;
+    padding-block: 32px;
     line-height: 1.6;
 }
 
 .footer .content{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    gap: 24px;
 }
 
 .footer address{
@@ -150,7 +181,7 @@ a:focus-visible{
 .footer-name{
     margin: 0 0 8px;
     font-family: var(--font-heading);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -164,14 +195,86 @@ a:focus-visible{
     text-decoration-thickness: 2px;
 }
 
-.footer-link{
-    display: flex;
+.footer-links{
+    display: none;
     flex-direction: column;
     gap: 8px;
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: right;
 }
 
 /* ----------------------------------------------------------- */
+
+@media (min-width: 640px){
+    .content{
+        padding-inline: 24px;
+    }
+
+    .utility{
+        display: block;
+    }
+
+    .utility .content{
+        justify-content: flex-end;
+        gap: 24px;
+    }
+
+    .footer{
+        padding-block: 48px;
+        font-size: 17px;
+    }
+
+    .footer .content{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    .footer-name{
+        font-size: 24px;
+    }
+
+    .footer-links{
+        display: flex;
+        text-align: right;
+    }
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 832px){
+    .header .content{
+        gap: 32px;
+        min-height: 80px;
+        padding-block: 0;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+
+    .logo img{
+        height: 36px;
+    }
+
+    .nav summary{
+        display: none;
+    } 
+
+    .nav details::details-content{
+        content-visibility: visible;
+        display: block;
+    }
+
+    .nav ul{
+        position: static;
+        display: flex;
+        gap: 4px;
+        padding: 0;
+        border: 0;
+    }
+
+    .nav a{
+        padding: 10px 16px;
+    }
+}
