@@ -1,27 +1,25 @@
-* {
-    box-sizing: border-box;
-}
+/* ----------------------------------------------------------- */
+/* Barn & unga */
+/* Mobile first */
+/* ----------------------------------------------------------- */
 
-body {
-    margin: 0;
-}
+
+/* Hero */
 
 .unga-hero {
     background-color: #fff3c4;
-    padding-block: 58px;
+    padding-block: 40px;
 }
 
 .ung-hero-content {
     display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 48px;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 32px;
 }
 
 .ung-hero-text h1 {
-    margin-top: 0;
-    margin-bottom: 12px;
-    font-size: 42px;
+    margin: 0 0 12px;
+    font-size: 36px;
 }
 
 .ung-hero-text p {
@@ -30,11 +28,213 @@ body {
 }
 
 .ung-hero-image {
-    height: 230px;
+    min-height: 220px;
     background-color: var(--color-highlight);
     border-radius: 5px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
+    padding: 16px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Hitta rätt för din ålder */
+/* ----------------------------------------------------------- */
+
+.age-section {
+    padding-block: 40px;
+}
+
+.age-section h2 {
+    margin: 0 0 24px;
+    font-size: 28px;
+}
+
+.age-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.age-card {
+    background-color: var(--color-surface);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.age-card h3 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.age-card p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* ----------------------------------------------------------- */
+/* Bibliotekariens boktips */
+/* ----------------------------------------------------------- */
+
+.booktips {
+    background-color: var(--color-surface);
+    padding-block: 40px;
+}
+
+.booktips h2 {
+    margin: 0 0 24px;
+    font-size: 28px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.book-card h3 {
+    margin: 10px 0 2px;
+    font-family: var(--font-body);
+    font-size: 18px;
+}
+
+.book-card > p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.book-cover {
+    min-height: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+}
+
+.book-card:nth-child(1) .book-cover {
+    background-color: #cbd8eb;
+}
+
+.book-card:nth-child(2) .book-cover {
+    background-color: #f7e4a1;
+}
+
+.book-card:nth-child(3) .book-cover {
+    background-color: #d2e3d8;
+}
+
+.book-card:nth-child(4) .book-cover {
+    background-color: #e2d1e4;
+}
+
+.book-note {
+    margin: 24px 0 0;
+    font-size: 14px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Tablet */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 640px) {
+
+    .unga-hero {
+        padding-block: 48px;
+    }
+
+    .ung-hero-text h1 {
+        font-size: 40px;
+    }
+
+    .ung-hero-image {
+        min-height: 240px;
+    }
+
+    .age-section {
+        padding-block: 48px;
+    }
+
+    .age-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .booktips {
+    padding-block: 48px;
+}
+
+.book-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
+
+/* ----------------------------------------------------------- */
+/* Desktop */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 832px) {
+
+    .unga-hero {
+        padding-block: 58px;
+    }
+
+    .ung-hero-content {
+        grid-template-columns: 1fr 480px;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .ung-hero-text h1 {
+        font-size: 42px;
+    }
+
+    .ung-hero-image {
+        min-height: 250px;
+    }
+
+    .age-section {
+        padding-block: 52px;
+    }
+
+    .age-section h2 {
+        font-size: 32px;
+    }
+
+    .age-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .age-card {
+        padding: 24px;
+    }
+
+    .age-card h3 {
+        font-size: 24px;
+    }
+
+    .booktips {
+    padding-block: 52px;
+}
+
+.booktips h2 {
+    font-size: 32px;
+}
+
+.book-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.book-cover {
+    min-height: 300px;
+}
 }
