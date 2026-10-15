@@ -1,0 +1,174 @@
+/* ----------------------------------------------------------- */
+/* Besök oss */
+/* Mobile first */
+/* ----------------------------------------------------------- */
+
+.visit-section {
+    padding-block: 40px;
+}
+
+.visit-section h1 {
+    margin: 0 0 40px;
+    font-size: 36px;
+}
+
+.visit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Öppettider */
+/* ----------------------------------------------------------- */
+
+.opening-hours h2,
+.find-us h2,
+.accessibility h2 {
+    margin: 0 0 16px;
+    font-size: 28px;
+}
+
+.opening-hours > p {
+    margin: 0 0 20px;
+}
+
+.opening-hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.opening-hours th,
+.opening-hours td {
+    padding: 12px;
+    text-align: left;
+}
+
+.opening-hours thead {
+    background-color: var(--color-dark);
+    color: var(--color-bg-text);
+}
+
+.opening-hours tbody tr {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.opening-hours tbody tr:nth-child(even) {
+    background-color: var(--color-surface);
+}
+
+
+/* ----------------------------------------------------------- */
+/* Hitta hit */
+/* ----------------------------------------------------------- */
+
+.map {
+    min-height: 220px;
+    background-color: var(--color-surface);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 16px;
+}
+
+.find-us p {
+    margin: 16px 0 0;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Tillgänglighet */
+/* ----------------------------------------------------------- */
+
+.accessibility {
+    margin-top: 40px;
+    padding: 24px;
+    background-color: var(--color-surface);
+    border-radius: 5px;
+}
+
+.accessibility ul {
+    margin: 0;
+    padding-left: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Tablet */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 640px) {
+
+    .visit-section {
+        padding-block: 48px;
+    }
+
+    .visit-section h1 {
+        font-size: 40px;
+    }
+
+    .map {
+        min-height: 260px;
+    }
+
+    .accessibility {
+        padding: 28px;
+    }
+
+    .accessibility ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 32px;
+    }
+}
+
+
+/* ----------------------------------------------------------- */
+/* Desktop */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 832px) {
+
+    .visit-section {
+        padding-block: 58px;
+    }
+
+    .visit-section h1 {
+        margin-bottom: 48px;
+        font-size: 42px;
+    }
+
+    .visit-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 48px;
+        align-items: start;
+    }
+
+    .opening-hours h2,
+    .find-us h2,
+    .accessibility h2 {
+        font-size: 32px;
+    }
+
+    .map {
+        min-height: 280px;
+    }
+
+    .accessibility {
+        margin-top: 48px;
+        padding: 32px;
+    }
+
+    .accessibility ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 40px;
+    }
+}
