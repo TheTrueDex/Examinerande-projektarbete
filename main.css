@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+:root {
+  --color-bg-text: #ffffff;
+  --color-dark: #1b2b4b;
+  --color-accent: #1f4f99;
+  --color-highlight: #f3c64b; 
+  --color-surface: #eef2f8;
+  --color-border: #d5dce8;
+  --color-muted: #5b6b88; 
+  --color-success: #1a6b3c; 
+  --font-heading: "Literata", Georgia, serif;
+  --font-body: "Atkinson Hyperlegible", system-ui, Arial, sans-serif;
+  }

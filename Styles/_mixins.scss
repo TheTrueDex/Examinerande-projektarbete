@@ -1,0 +1,81 @@
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet-layout {
+  .content {
+        padding-inline: 24px;
+  }
+
+  .utility {
+        display: block;
+
+    .content {
+        justify-content: flex-end;
+        gap: 24px;
+    }
+  }
+
+  .footer {
+        padding-block: 48px;
+        font-size: 17px;
+
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    &-name {
+      font-size: 24px;
+    }
+
+    &-links {
+      display: flex;
+      text-align: right;
+    }
+  }
+}
+
+@mixin desktop-layout {
+  .header {
+    .content {
+      gap: 32px;
+      min-height: 80px;
+      padding-block: 0;
+    }
+  }
+
+  .logo {
+    font-size: 26px;
+
+    img {
+      height: 36px;
+    }
+  }
+
+  .nav {
+    summary {
+      display: none;
+    }
+
+    details::details-content {
+      content-visibility: visible;
+      display: block;
+    }
+
+    ul {
+      position: static;
+      display: flex;
+      gap: 4px;
+      padding: 0;
+      border: 0;
+    }
+
+    a {
+      padding: 10px 16px;
+    }
+  }
+}
