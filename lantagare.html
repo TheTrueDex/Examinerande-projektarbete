@@ -114,30 +114,43 @@
         <fieldset class="form-section">
             <legend class="form-section_title">Kontakt och påminnelser</legend>
         
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="epost">E-post (obligatoriskt)</label>
+                    <input id="epost" name="epost" type="email"
+                        autocomplete="email" required>
+                </div>
 
-            <label for="epost">E-post (obligatoriskt)</label>
-            <input id="epost" name="epost" type="email"
-                autocomplete="email" required>
-
-            <label for="mobil">Mobilnummer</label>
-            <input id="mobil" name="mobil" type="tel"
-                autocomplete="tel">
+                <div class="form-field">
+                    <label for="mobil">Mobilnummer</label>
+                    <input id="mobil" name="mobil" type="tel"
+                        autocomplete="tel">
+                </div>
+            </div>
 
             <p>Jag vill få påminnelser via</p>
 
-            <input id="paminelse-epost" type="checkbox"
-                name="paminelse" value="epost" checked>
-            <label for="paminelse-epost">E-post</label>
+            <div class="checkbox-group">
+                <div class="checkbox-option">
+                    <input id="paminelse-epost" type="checkbox"
+                        name="paminelse" value="epost" checked>
+                    <label for="paminelse-epost">E-post</label>
+                </div>
 
-            <input id="paminelse-sms" type="checkbox"
-                name="paminelse" value="sms">
-            <label for="paminelse-sms">SMS</label>
-
-            <label for="sprak">Språk för utskick</label>
-            <select id="sprak" name="sprak">
-                <option value="sv">Svenska</option>
-                <option value="en">Engelska</option>
-            </select>
+                <div class="checkbox-option">
+                    <input id="paminelse-sms" type="checkbox"
+                        name="paminelse" value="sms">
+                    <label for="paminelse-sms">SMS</label>
+                </div>
+            </div>    
+        
+            <div class="form-field">    
+                <label for="sprak">Språk för utskick</label>
+                <select id="sprak" name="sprak">
+                    <option value="sv">Svenska</option>
+                    <option value="en">Engelska</option>
+                </select>
+            </div>    
         </fieldset>
 
 

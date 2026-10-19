@@ -22,7 +22,7 @@
 
 .hero-intro h1 {
     font-family: var(--font-heading);
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 15px;
     letter-spacing: -0.5px;
@@ -144,14 +144,14 @@ form {
 .form-section {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 25px;
+    padding: 14px;
+    margin-bottom: 20px;
     
 }
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
     margin-bottom: 14px;
 }
@@ -190,6 +190,32 @@ legend {
     margin-top: 24px;
 }
 
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-option label {
+    display: inline;
+    margin: 0;
+    font-weight: 400;
+}
+
 .btn-primary {
     background-color: var(--color-accent);
     color: white;
@@ -213,4 +239,43 @@ legend {
 
 .form-agreement {
     font-size: 13px;
+}
+
+.steps li {
+    padding: 10px 6px;
+    font-size: 0.8rem;
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+    .hero-intro h1 {
+        font-size: 2.4remy;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .steps li {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .hero-intro h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero {
+        margin: 40px auto;
+    }
+
+    .hero .content {
+        display: grid;
+    }
 }
