@@ -1,0 +1,159 @@
+/* ----------------------------------------------------------- */
+/* Barn & unga */
+/* Mobile first */
+/* ----------------------------------------------------------- */
+
+
+/* Hero */
+@use "mixins_barn" as *;
+@use "variables" as *;
+
+.unga-hero {
+    background-color: #fff3c4;
+    padding-block: 40px;
+}
+
+.ung-hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.ung-hero-text {
+    h1 {
+        margin: 0 0 12px;
+        font-size: 36px;
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.5;
+    }
+}
+
+.ung-hero-image {
+    min-height: 220px;
+    background-color: $color-highlight;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+
+/* ----------------------------------------------------------- */
+/* Hitta rätt för din ålder */
+/* ----------------------------------------------------------- */
+
+.age-section {
+    padding-block: 40px;
+
+    h2 {
+        margin: 0 0 24px;
+        font-size: 28px;
+    }
+}
+
+.age-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.age-card {
+    background-color: $color-surface;
+    padding: 20px;
+    border-radius: 5px;
+
+    h3 {
+        margin: 0 0 6px;
+        font-size: 22px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 16px;
+    }
+}
+
+
+/* ----------------------------------------------------------- */
+/* Bibliotekariens boktips */
+/* ----------------------------------------------------------- */
+
+.booktips {
+    background-color: $color-surface;
+    padding-block: 40px;
+
+    h2 {
+        margin: 0 0 24px;
+        font-size: 28px;
+    }
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.book-card {
+    h3 {
+        margin: 10px 0 2px;
+        font-family: $font-body;
+        font-size: 18px;
+    }
+
+    > p {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    &:nth-child(1) {
+        .book-cover {
+            background-color: #cbd8eb;
+        }
+    }
+
+    &:nth-child(2) {
+        .book-cover {
+            background-color: #f7e4a1;
+        }
+    }
+
+    &:nth-child(3) {
+        .book-cover {
+            background-color: #d2e3d8;
+        }
+    }
+
+    &:nth-child(4) {
+        .book-cover {
+            background-color: #e2d1e4;
+        }
+    }
+}
+
+.book-cover {
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.book-note {
+    margin: 24px 0 0;
+    font-size: 14px;
+}
+
+/* detta gör så mina mixins från sass funkar på min unga sida samt att mina media queries fungerar resposinvt */
+@include respond-to(640px) {
+    @include tablet;
+}
+
+@include respond-to(832px) {
+    @include desktop;
+}
