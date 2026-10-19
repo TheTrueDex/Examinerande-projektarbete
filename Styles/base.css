@@ -1,4 +1,12 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 body {
   font-family: "Atkinson Hyperlegible", system-ui, Arial, sans-serif;
   font-size: 18px;
