@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/base.css">
+    <link rel="stylesheet" href="./Styles/page2.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="utility">
+        <div class="content">
+            <a href="#">Lättläst</a>
+            <a href="#">Teckenspråk</a>
+            <a href="#" lang="en">In English</a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="content">
+            <a class="logo" href="/">
+                <img src="" alt="Logo">
+                Norrbacka bibliotek
+            </a>
+
+            <nav class="nav" aria-label="meny-title">
+                <details>
+                    <summary>Meny</summary>
+                        <ul>
+                            <li><a href="Startsida.html">Start</a></li>
+                            <li><a href="Evenemang.html" aria-current="page">Evenemang</a></li>
+                            <li><a href="#">Barn & unga</a></li>
+                            <li><a href="#">Besök oss</a></li>
+                            <li><a href="#">Bli låntagare</a></li>
+                        </ul>
+                </details>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="content">
+            <nav class="crumb" aria-label="smula">
+                <ol>
+                    <li><a href="Startsida.html">Start</a></li>
+                    <li aria-current="page">Evenemang</li>
+                </ol>
+            </nav>
+
+            <h1 class="page-title">Evenemang</h1>
+
+            <form action="/Evenemang.html" class="filter" aria-label="Filtrera evenemang">
+                <div class="field">
+                    <label for="category">Kategori</label>
+
+                    <select name="kategori" id="category">
+                        <option value="">Alla kategorier</option>
+                        <option value="barn">Barn & unga</option>
+                        <option value="forfattare">Författarsamtal</option>
+                        <option value="digitalt">Digitalt</option>
+                        <option value="sprak">Språk</option>
+                    </select>
+
+                </div>
+
+                <div class="field">
+                    <label for="month">Månad</label>
+
+                    <select name="månad" id="month">
+                        <option value="2026-10">Oktober 2026</option>
+                        <option value="2026-11">November 2026</option>
+                        <option value="2026-12">December 2026</option>
+                    </select>
+
+                </div>
+
+                <label class="check">
+                    <input type="checkbox" name="gratis">
+                    Bara kostnadsfria
+                </label>
+
+                <button class="button" type="submit">Visa</button>
+            </form>
+
+            <section class="month" aria-labelledby="month-oktober">
+                <h2 id="month-oktober">Oktober</h2>
+
+                <ul class="event-rows">
+                    <li class="event-row">
+
+                        <time class="date-badge" datetime="2026-10-14">
+                            <span class="date-day">14</span>
+                            <span class="date-month">okt</span>
+                        </time>
+
+                        <div class="event-info">
+                            <h3><a href="#">Författarsamtal med Sara Holm</a></h3>
+                            <p class="event-meta">18:00_19:30 Stora salen Fri entré</p>
+                            <p class="event-desc">Om romanen ”Vattnet minns” och skrivandets vardag. Teckenspråkstolkas.</p>
+                        </div>
+
+                        <span class="badge">Anmälan krävs</span>
+                    </li>
+
+                    <li class="event-row">
+            
+                        <time class="date-badge" datetime="2026-10-17">
+                            <span class="date-day">17</span>
+                            <span class="date-month">okt</span>
+                        </time>
+
+                        <div class="event-info">
+                            <h3><a href="#">Sagostund 3_6 år</a></h3>
+                            <p class="event-meta">10:30_11:00 Barnavdelningen Fri entré</p>
+                            <p class="event-desc">Vi läser och sjunger tillsammans. Ingen anmälan.</p>
+                        </div>
+                    </li>
+ 
+                    <li class="event-row">
+
+                        <time class="date-badge" datetime="2026-10-20">
+                            <span class="date-day">20</span>
+                            <span class="date-month">okt</span>
+                        </time>
+
+                        <div class="event-info">
+                            <h3><a href="#">Digital drop-in</a></h3>
+                            <p class="event-meta">14:00_16:00 Studierummet Fri entré</p>
+                            <p class="event-desc">Få hjälp med BankID, e-tjänster och mobilen.</p>
+                        </div>
+
+                    </li>
+ 
+                    <li class="event-row">
+
+                        <time class="date-badge" datetime="2026-10-27">
+                            <span class="date-day">27</span>
+                            <span class="date-month">okt</span>
+                        </time>
+
+                        <div class="event-info">
+                            <h3><a href="#">Språkcafé_öva svenska</a></h3>
+                            <p class="event-meta">17:00_18:30 Caféet Fri entré</p>
+                            <p class="event-desc">Prata svenska i lugn takt med volontärer.</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="content">
+            <address>
+                <p class="footer-name">Norrbacka bibliotek</p>
+                Biblioteksgatan 1, 123 45 Hamnstad<br>
+                <a href="tel:+46100000000">010-222 33 44</a>
+            </address>
+
+            <ul class="footer-links">
+                <li><a href="#">Tillgänglighetsredogörelse</a></li>
+                <li><a href="#">Personuppgifter</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -167,7 +167,7 @@ a:focus-visible {
   list-style: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .content {
     padding-inline: 24px;
   }

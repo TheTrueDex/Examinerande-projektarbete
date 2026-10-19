@@ -6,21 +6,21 @@
 
 @mixin tablet-layout {
   .content {
-        padding-inline: 24px;
+    padding-inline: 24px;
   }
 
   .utility {
-        display: block;
+      display: block;
 
     .content {
-        justify-content: flex-end;
-        gap: 24px;
+      justify-content: flex-end;
+      gap: 24px;
     }
   }
 
   .footer {
-        padding-block: 48px;
-        font-size: 17px;
+      padding-block: 48px;
+      font-size: 17px;
 
     .content {
       flex-direction: row;

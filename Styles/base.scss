@@ -194,7 +194,7 @@ a {
   }
 }
 
-@include respond-to(768px) {
+@include respond-to(640px) {
   @include tablet-layout;
 }
 

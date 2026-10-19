@@ -1,0 +1,222 @@
+@use "mixins_p2" as *;
+@use "variables" as *;
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+    padding-block: 16px;
+}
+
+.crumb {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+  }
+
+  li + li::before {
+    content: "/";
+    margin-inline: 6px;
+  }
+
+  a {
+    color: $color-accent;
+  }
+}
+
+.page-title {
+    margin: 24px 0;
+    font-size: 34px;
+    line-height: 1.15;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 0;
+    border-radius: 4px;
+    background-color: $color-accent;
+    color: $color-bg-text;
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+.button:focus-visible, select:focus-visible, input:focus-visible {
+    outline: 3px solid $color-highlight;
+    outline-offset: 3px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: $color-surface;
+}
+
+.field {
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid $color-bg-text;
+    border-radius: 4px;
+    background-color: $color-bg-text;
+    color: $color-dark;
+    font: inherit;
+    font-size: 16px;
+  }
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    font-size: 15px;
+
+  input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: $color-accent;
+  }
+}
+
+.month {
+  h2 {
+    margin: 32px 0 12px;
+    font-size: 24px;
+  }
+}
+
+.event-rows {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid $color-border;
+}
+
+.event-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "date info" "date badge";
+    gap: 4px 16px;
+    align-items: start;
+    padding-block: 20px;
+    border-bottom: 1px solid $color-border;
+
+  &:focus-within {
+    outline: 3px solid $color-highlight;
+    outline-offset: -3px;
+  }
+}
+
+.date-badge {
+    grid-area: date;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: $color-dark;
+    color: $color-bg-text;
+    line-height: 1;
+}
+
+.date-day {
+    font-family: $font-heading;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.date-month {
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.event-info {
+    grid-area: info;
+
+  h3 {
+
+    margin: 0 0 4px;
+    font-size: 20px;
+    line-height: 1.25;
+
+    a {
+      color: $color-accent;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+
+.event-meta, .event-desc {
+    margin: 0;
+}
+
+.event-meta {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+.event-desc {
+    font-size: 16px;
+}
+
+.badge {
+    grid-area: badge;
+    justify-self: start;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background-color: $color-highlight;
+    color: $color-dark;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+@include respond-to(640px) {
+  @include tablet-layout-p2;
+}
+
+@include respond-to(832px) {
+  @include desktop-layout-p2;
+}

@@ -1,0 +1,61 @@
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet-layout-p2{
+    .filter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        gap: 16px 24px;
+        padding: 24px;
+    }
+
+    .field {
+        flex: 1 1 200px;
+    }
+
+    .month h2 {
+        margin-top: 40px;
+        font-size: 28px;
+    }
+
+    .event-row {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: "date info badge";
+        gap: 20px;
+    }
+
+    .date-badge {
+        width: 52px;
+        height: 52px;
+    }
+
+    .date-day {
+        font-size: 22px;
+    }
+
+    .date-month {
+        font-size: 13px;
+    }
+
+    .event-info h3 {
+        font-size: 22px;
+    }
+
+    .badge {
+        margin-top: 0;
+        justify-self: end;
+    }
+}
+
+
+
+@mixin desktop-layout-p2{
+    .page-title {
+        margin-block: 32px;
+        font-size: 44px;
+  }
+}
