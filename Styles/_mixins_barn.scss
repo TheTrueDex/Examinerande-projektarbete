@@ -1,0 +1,99 @@
+@mixin respond-to($breakpoint){ 
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+    .unga-hero {
+        padding-block: 48px;
+    }
+
+    .ung-hero-text {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .ung-hero-image {
+        min-height: 240px;
+    }
+
+    .age-section {
+        padding-block: 48px;
+    }
+
+    .age-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .booktips {
+        padding-block: 48px;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@mixin desktop {
+
+    .unga-hero {
+        padding-block: 58px;
+    }
+
+    .ung-hero-content {
+        grid-template-columns: 1fr 480px;
+        gap: 48px;
+        align-items: center;
+    }
+
+    .ung-hero-text {
+        h1 {
+            font-size: 42px;
+        }
+    }
+
+    .ung-hero-image {
+        min-height: 250px;
+    }
+
+    .age-section {
+        padding-block: 52px;
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .age-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .age-card {
+        padding: 24px;
+
+        h3 {
+            font-size: 24px;
+        }
+    }
+
+    .booktips {
+        padding-block: 52px;
+
+        h2 {
+            font-size: 32px;
+        }
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    .book-cover {
+        min-height: 300px;
+    }
+}
