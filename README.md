@@ -46,7 +46,6 @@ Utility och header HTML:
             <ul class="footer-links">
                 <li><a href="#">Tillgänglighetsredogörelse</a></li>
                 <li><a href="#">Personuppgifter</a></li>
-                <li><a href="#">Kontakt</a></li>
             </ul>
         </div>
     </footer>
