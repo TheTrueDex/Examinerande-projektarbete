@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Base.css">
+    <link rel="stylesheet" href="./Styles/base.css">
     <link rel="stylesheet" href="lantagare.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -24,14 +25,17 @@
                 Norrbacka bibliotek
             </a>
 
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#">Evenemang</a></li>
-                    <li><a href="#">Barn & unga</a></li>
-                    <li><a href="#">Besök oss</a></li>
-                    <li><a href="#" current="page">Bli låntagare</a></li>
-                </ul>
+            <nav class="nav" aria-label="meny-title">
+                <details>
+                    <summary>Meny</summary>
+                        <ul>
+                            <li><a href="Startsida.html">Start</a></li>
+                            <li><a href="Evenemang.html">Evenemang</a></li>
+                            <li><a href="unga.html">Barn & unga</a></li>
+                            <li><a href="besok.html">Besök oss</a></li>
+                            <li><a href="lantagare.html" aria-current="page">Bli låntagare</a></li>
+                        </ul>
+                </details>        
             </nav>
         </div>
     </header>

@@ -5,6 +5,7 @@
 
 
 
+
 .hero {
     background-color: white;
     max-width: 900px;
@@ -146,6 +147,7 @@ form {
     border-radius: 4px;
     padding: 14px;
     margin-bottom: 20px;
+    font-size: 14px;
     
 }
 
