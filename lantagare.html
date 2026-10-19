@@ -61,37 +61,55 @@
         </section>
 
 
-        <form action="/skicka-data" method="POST">
-        <fieldset class="form-section">
-            <legend class="form-section_title">Personuppgifter</legend>
+            <form action="/skicka-data" method="POST">
+            <fieldset class="form-section">
+                <legend class="form-section_title">Personuppgifter</legend>
         
+        <div class="form-row">
+            <div class="form-field">        
+                <label for="fornamn">Förnamn (obligatoriskt)</label>
+                <input id="fornamn" name="fornamn"
+                      autocomplete="given-name" required>
+            </div>
 
-            <label for="fornamn">Förnamn (obligatoriskt)</label>
-            <input id="fornamn" name="fornamn"
-                   autocomplete="given-name" required>
+            <div class="form-field">
+                <label for="efternamn">Efternamn (obligatoriskt)</label>
+                <input id="efternamn" name="efternamn"
+                       autocomplete="family-name" required>
+            </div>
+        </div>
 
-            <label for="efternamn">Efternamn (obligatoriskt)</label>
-            <input id="efternamn" name="efternamn"
-                   autocomplete="family-name" required>
+        <div class="form-field">
+                <label for="fodelsedatum">
+                  Födelsedatum (obligatoriskt)
+                </label>
+                <input id="fodelsedatum" name="fodelsedatum"
+                    type="date" required>
+        </div>
 
-            <label for="fodelsedatum">
-              Födelsedatum (obligatoriskt)
-            </label>
-            <input id="fodelsedatum" name="fodelsedatum"
-                   type="date" required>
+        <div class="form-field">
 
-            <label for="adress">Gatuadress (obligatoriskt)</label>
-            <input id="adress" name="adress"
-                   autocomplete="street-address" required>
+                <label for="adress">Gatuadress (obligatoriskt)</label>
+             <input id="adress" name="adress"
+                       autocomplete="street-address" required>
+        </div>
 
-            <label for="postnummer">Postnummer</label>
-            <input id="postnummer" name="postnummer"
-                autocomplete="postal-code">
+        <div class="form-row">
+            <div class="form-field">
 
-            <label for="ort">Ort</label>
-            <input id="ort" name="ort"
-                autocomplete="address-level2">
-        </fieldset>
+                <label for="postnummer">Postnummer</label>
+                <input id="postnummer" name="postnummer"
+                    autocomplete="postal-code">
+            </div>
+
+            <div class="form-field">
+
+                <label for="ort">Ort</label>
+                <input id="ort" name="ort"
+                    autocomplete="address-level2">
+            </div>
+        </div>
+    </fieldset>
 
         <fieldset class="form-section">
             <legend class="form-section_title">Kontakt och påminnelser</legend>
