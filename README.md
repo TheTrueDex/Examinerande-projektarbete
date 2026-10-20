@@ -45,13 +45,13 @@ Skärmläsare - Nej
 
 Besök oss:
 
-Lighthouse - 
+Lighthouse - 99
 
-Contrast -
+Contrast - 8.69
 
-Kan man tabea genom sidan - 
+Kan man tabea genom sidan - ja
 
-Har bilder alt-text - 
+Har bilder alt-text - ja
 
 Skärmläsare - Nej
 
@@ -59,13 +59,13 @@ Skärmläsare - Nej
 
 Barn och unga:
 
-Lighthouse - 
+Lighthouse - 100
 
-Contrast -
+Contrast -8.69
 
-Kan man tabea genom sidan - 
+Kan man tabea genom sidan - ja
 
-Har bilder alt-text - 
+Har bilder alt-text - ja
 
 Skärmläsare - Nej
 
