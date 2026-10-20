@@ -1,10 +1,7 @@
-*{
-    box-sizing: border-box;
-
-}
 
 
 
+/* Hero */
 
 .hero {
     background-color: white;
@@ -37,6 +34,7 @@
     margin-bottom: 35px;
     max-width: 750px;
 }
+
 
 .steps {
     width: 100%;
@@ -91,6 +89,9 @@
     content: "3. ";
 }
 
+/* Form */
+
+
 form label {
     display: block;
     font-size: 0.85rem;
@@ -131,12 +132,6 @@ form select:focus {
 }
 
 
-
-
-
-
-
-
 form {
     max-width: 650px;
     margin: 0 auto;
@@ -172,15 +167,18 @@ form {
     width: 100%;
 }
 
+#fodelsedatum {
+    width: 100%;
+    max-width: 250px;
+}
+
 legend {
     font-weight: bold;
     font-size: 1.2rem;
     padding: 0 10px;
 }
 
-.hero {
-    text-align: left;
-}
+
 
 .steps {
     display: block;
@@ -218,6 +216,9 @@ legend {
     font-weight: 400;
 }
 
+
+/* Buttons */
+
 .btn-primary {
     background-color: var(--color-accent);
     color: white;
@@ -239,9 +240,7 @@ legend {
     transform: scale(0.98);
 }
 
-.form-agreement {
-    font-size: 13px;
-}
+
 
 .steps li {
     padding: 10px 6px;
@@ -249,9 +248,9 @@ legend {
     overflow-wrap: break-word;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 640px) {
     .hero-intro h1 {
-        font-size: 2.4remy;
+        font-size: 2.4rem;
     }
 
     .form-row {
@@ -268,7 +267,7 @@ legend {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 832px) {
     .hero-intro h1 {
         font-size: 2.8rem;
     }
