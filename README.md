@@ -73,12 +73,12 @@ Skärmläsare - Nej
 
 Låntagare:
 
-Lighthouse - 
+Lighthouse - 100
 
 Contrast -
 
-Kan man tabea genom sidan - 
+Kan man tabea genom sidan - Ja
 
-Har bilder alt-text - 
+Har bilder alt-text - Nej
 
 Skärmläsare - Nej
