@@ -75,10 +75,10 @@ Låntagare:
 
 Lighthouse - 100
 
-Contrast -
+Contrast - 8.69
 
 Kan man tabea genom sidan - Ja
 
-Har bilder alt-text - Nej
+Har bilder alt-text - Ja
 
 Skärmläsare - Nej
