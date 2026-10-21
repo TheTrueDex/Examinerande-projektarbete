@@ -1,53 +1,84 @@
-Kommer lägga all kod som ska delas med varandra så vi inte får problem i längden.
+Grupp 2 - Tanzim, Denny, Nassr
+---------------------
 
-Utility och header HTML:
+Webbplats uppdelning:
 
-    <div class="utility">
-        <div class="content">
-            <a href="#">Lättläst</a>
-            <a href="#">Teckenspråk</a>
-            <a href="#" lang="en">In English</a>
-        </div>
-    </div>
+Tanzim - Besök oss samt Barn och unga 
 
-    <header class="header">
-        <div class="content">
-            <a class="logo" href="/">
-                <img src="" alt="Logo">
-                Norrbacka bibliotek
-            </a>
+Denny - Låntagare
 
-            <nav class="nav" aria-label="meny-title">
-                <details>
-                    <summary>Meny</summary>
-                        <ul>
-                            <li><a href="#" aria-current="page">Start</a></li>
-                            <li><a href="#">Evenemang</a></li>
-                            <li><a href="#">Barn & unga</a></li>
-                            <li><a href="#">Besök oss</a></li>
-                            <li><a href="#">Bli låntagare</a></li>
-                        </ul>
-                </details>
-            </nav>
-        </div>
-    </header>
+Nassr - Start och Evenemang 
 
-    -----------------------------------------------------------------------------
-    
-    Footer HTML:
+Projektet går ut på att replikera en webbplats med flera sidor med information om evenemang, barn och unga samt hur man blir låntagare. Målet med sidorna är att de ska vara användbara, tydliga och responsiva enligt mockupen. Webbplatsen ska dessutom fungera på både pc, surfplatta och mobil. Vi använder HTML för att bygga strukturen och css/sass för layout och design av sidorna.
 
-        <footer class="footer">
-        <div class="content">
-            <address>
-                <p class="footer-name">Norrbacka bibliotek</p>
-                Biblioteksgatan 1, 123 45 Hamnstad<br>
-                <a href="tel:+46100000000">010-222 33 44</a>
-            </address>
-            <ul class="footer-links">
-                <li><a href="#">Tillgänglighetsredogörelse</a></li>
-                <li><a href="#">Personuppgifter</a></li>
-            </ul>
-        </div>
-    </footer>
-    -----------------------------------------------------------------------------
-    
+---------------------
+
+Tillgänglighet:
+
+Startsida:
+
+Lighthouse - 97
+
+Contrast - lägsta 7.96
+
+Kan man tabea genom sidan - Ja
+
+Har bilder alt-text - Ja
+
+Skärmläsare - Nej
+
+---------------------
+
+Evenemang:
+
+Lighthouse - 98
+
+Contrast - lägsta 7.96
+
+Kan man tabea genom sidan - Ja
+
+Har bilder alt-text - Ja
+
+Skärmläsare - Nej
+
+---------------------
+
+Besök oss:
+
+Lighthouse - 99
+
+Contrast - 8.69
+
+Kan man tabea genom sidan - ja
+
+Har bilder alt-text - ja
+
+Skärmläsare - Nej
+
+---------------------
+
+Barn och unga:
+
+Lighthouse - 100
+
+Contrast -8.69
+
+Kan man tabea genom sidan - ja
+
+Har bilder alt-text - ja
+
+Skärmläsare - Nej
+
+---------------------
+
+Låntagare:
+
+Lighthouse - 100
+
+Contrast -
+
+Kan man tabea genom sidan - Ja
+
+Har bilder alt-text - Nej
+
+Skärmläsare - Nej
